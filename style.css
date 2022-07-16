@@ -150,5 +150,45 @@ p {
 .quote {
 
    background-color: rgb(238, 250, 252);
-   height: 300px;
+   height: 100px;
+}
+
+footer {
+   background-color: rgb(37, 37, 37);
+   height: 220px;
+   color: white;
+}
+
+.footer {
+   padding: 40px 0;
+   font-size: 20px;
+   font-family: 'Rubik', sans-serif;
+   text-align: center;
+   font-weight: 300;
+}
+
+.line__footer {
+   margin: 40px 0;
+   height: 1px;
+   background-color: white;
+   width: 100%;
+}
+
+.society img {
+   font-size: 26px;
+   padding-right: 20px;
+   color: white;
+   transition: color .4s;
+}
+
+.fa-vk:hover {
+   color: rgb(50, 132, 255);
+}
+
+.fa-telegram:hover {
+   color: rgb(12, 174, 202);
+}
+
+.fa-github:hover {
+   color: rgb(142, 72, 255);
 }
