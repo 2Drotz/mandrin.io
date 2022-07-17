@@ -51,7 +51,7 @@ p {
    font-weight: 300;
 }
 
-.header_image {
+.header-image {
    width: 50%;
 }
 
@@ -63,7 +63,7 @@ p {
    font-family: monospace;
    white-space: nowrap;
    overflow: hidden;
-   border-right: 4px solid orange;
+   border-right: 4px solid rgb(63, 94, 251);
    animation: flashing-border 0.75s step-end infinite,
       printed-text 2s steps(15);
 }
@@ -74,7 +74,7 @@ p {
 
 @keyframes flashing-border {
    0% {
-      border-color: orange;
+      border-color: rgb(63, 94, 251);
    }
 
    50% {
@@ -82,7 +82,7 @@ p {
    }
 
    100% {
-      border-color: orange;
+      border-color: rgb(63, 94, 251);
    }
 }
 
@@ -108,7 +108,7 @@ p {
 
 }
 
-.main_info {
+.main-info {
    height: 310px;
    display: flex;
    font-size: 20px;
@@ -158,31 +158,126 @@ p {
    color: rgb(37, 37, 37)
 }
 
-.personal_info {
+.personal-info {
    width: 35%;
 }
 
-.my_skills {
+.my-skills {
    margin-left: 40px;
    font-family: 'Rubik', sans-serif;
 }
 
-.line_gradient {
+.line-gradient {
    width: 100%;
    height: 0.4em;
-   background: rgb(131, 58, 180);
-   background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+   background: rgb(63, 94, 251);
+   background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+/* ------------------------------------------------------- */
+
+.project {
+   font-family: 'Rubik', sans-serif;
+   margin: 40px 0;
+}
+
+.project-title {
+   font-size: 36px;
+   text-align: center;
+}
+
+.first-project {
+   height: 300px;
+   display: flex;
+   background-color: rgb(255, 255, 255);
+   border-radius: 10px;
+   box-shadow: 0px 8px 30px rgb(223, 223, 223);
+   margin: 50px 0;
+}
+
+.two-project {
+   height: 300px;
+   display: flex;
+   background-color: rgb(255, 255, 255);
+   border-radius: 10px;
+   box-shadow: 0px 8px 30px rgb(223, 223, 223);
+   margin: 50px 0;
+}
+
+.project-image {
+   height: 100%;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   width: 30%;
+   background-image: url('img/vas.png');
+}
+
+.two-project-image {
+   height: 100%;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   width: 30%;
+   background-image: url('img/circle.jpg');
+}
+
+.projec-info {
+   width: 70%;
+   padding: 20px 40px;
+   display: block;
+}
+
+.tech {
+   margin: 30px 0px 10px 0;
+}
+
+.tech span {
+   border-radius: 4px;
+   border: 2px solid rgb(252, 70, 107);
+   padding: 8px;
+}
+
+.btn-project {
+   display: inline-block;
+   margin: 30px 10px 0 0;
+   padding: 10px 13px;
+   background-color: rgb(63, 94, 251);
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: all 0.3s;
+   color: white;
+   text-decoration: none;
+}
+
+.btn-project:hover {
+   background-color: rgba(63, 94, 251, 0.8);
+   transform: translateY(-3px);
+}
+
+.btn-project-sourse {
+   display: inline-block;
+   text-decoration: none;
+   background-color: white;
+   box-shadow: 0px 2px 10px rgb(223, 223, 223);
+   margin: 30px 10px 0 0;
+   padding: 10px 13px;
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+   color: rgb(63, 94, 251);
+   transition: all 0.3s;
+}
+
+.btn-project-sourse:hover {
+   transform: translateY(-3px);
 }
 
 
 
-
-
 .footer {
-   position: absolute;
-   bottom: 0;
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
+   align-items: center;
    padding: 40px 0;
    font-size: 14px;
    font-family: 'Rubik', sans-serif;
@@ -190,12 +285,16 @@ p {
 
 }
 
+.codewars {
+   margin: -5px;
+}
 
 .society img {
    font-size: 16px;
    padding-right: 20px;
    color: rgb(27, 27, 27);
    transition: color .4s;
+
 }
 
 .fa-vk:hover {
